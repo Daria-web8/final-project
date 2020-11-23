@@ -10,6 +10,10 @@
 
 <body>
     <header class="header">
+        <input id="menu__toggle" class="mobile-site" type="checkbox" />
+        <label class="menu__btn mobile-site" for="menu__toggle">
+            <span class="mobile-site"></span>
+        </label>
         <div class="header-wrp">
             <a href="index.html" class="header-logo">
                 <svg class="header-logo-svg" xmlns="http://www.w3.org/2000/svg"
@@ -20,18 +24,14 @@
                 <span class="header-logo-txt">Waxom</span>
             </a>
             <div class="nbs-wrp">
-
-                <nav class="header-menu">
-                    <a href="#" class="header-menu-link">Home</a>
-                    <a href="#" class="header-menu-link">About Us</a>
-                    <a href="#" class="header-menu-link">Portfolio</a>
-
-                    <a href="#" class="header-menu-link">Features</a>
-                    <a href="#" class="header-menu-link">Blog </a>
-                    <a href="#" class="header-menu-link">Pricing</a>
-                    <a href="#" class="header-menu-link">Shortcodes </a>
-                    <a href="#" class="header-menu-link"> Contact</a>
-                </nav>
+                <a href="#" class="header-menu-link">Home</a>
+                <a href="#" class="header-menu-link">About Us</a>
+                <a href="#" class="header-menu-link">Portfolio</a>
+                <a href="#" class="header-menu-link">Features</a>
+                <a href="#" class="header-menu-link">Blog </a>
+                <a href="#" class="header-menu-link">Pricing</a>
+                <a href="#" class="header-menu-link">Shortcodes </a>
+                <a href="#" class="header-menu-link"> Contact</a>
                 <button class="header-btn">
                     <svg class=" header-btn-img" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 20 27">
@@ -39,7 +39,10 @@
                             d="M15.995483,4.9985275 C15.995483,4.9985275 14.496216,4.9985275 14.496216,4.9985275 C14.496216,3.3417358 12.483032,1.998188 9.998779,1.998188 C7.5144043,1.998188 5.5009766,3.3417358 5.5009766,4.9985275 C5.5009766,4.9985275 4.001831,4.9985275 4.001831,4.9985275 C2.3458252,4.9985275 1.0032959,6.3412437 1.0032959,7.997204 C1.0032959,7.997204 1.0032959,22.995163 1.0032959,22.995163 C1.0032959,24.651123 2.3458252,25.994255 4.001831,25.994255 C4.001831,25.994255 15.995483,25.994255 15.995483,25.994255 C17.651611,25.994255 18.994263,24.651123 18.994263,22.995163 C18.994263,22.995163 18.994263,7.997204 18.994263,7.997204 C18.994263,6.3412437 17.651611,4.9985275 15.995483,4.9985275 ZM9.998779,3.4983559 C11.655029,3.4983559 12.99707,3.96241 12.99707,4.9985275 C12.99707,4.9985275 7.000244,4.9985275 7.000244,4.9985275 C7.000244,3.96241 8.342651,3.4983559 9.998779,3.4983559 ZM17.494995,22.995163 C17.494995,23.823143 16.823486,24.494087 15.995483,24.494087 C15.995483,24.494087 4.001831,24.494087 4.001831,24.494087 C3.173584,24.494087 2.5024414,23.823143 2.5024414,22.995163 C2.5024414,22.995163 2.5024414,21.495407 2.5024414,21.495407 C2.5024414,21.495407 17.494995,21.495407 17.494995,21.495407 C17.494995,21.495407 17.494995,22.995163 17.494995,22.995163 ZM17.494995,19.99524 C17.494995,19.99524 2.5024414,19.99524 2.5024414,19.99524 C2.5024414,19.99524 2.5024414,7.997204 2.5024414,7.997204 C2.5024414,7.168808 3.173584,6.497452 4.001831,6.497452 C4.001831,6.497452 5.5009766,6.497452 5.5009766,6.497452 C5.5009766,6.497452 5.5009766,10.997543 5.5009766,10.997543 C5.5009766,10.997543 7.000244,10.997543 7.000244,10.997543 C7.000244,10.997543 7.000244,6.497452 7.000244,6.497452 C7.000244,6.497452 12.99707,6.497452 12.99707,6.497452 C12.99707,6.497452 12.99707,10.997543 12.99707,10.997543 C12.99707,10.997543 14.496216,10.997543 14.496216,10.997543 C14.496216,10.997543 14.496216,6.497452 14.496216,6.497452 C14.496216,6.497452 15.995483,6.497452 15.995483,6.497452 C16.823975,6.497452 17.494995,7.168808 17.494995,7.997204 C17.494995,7.997204 17.494995,19.99524 17.494995,19.99524 Z" />
                     </svg>
                 </button>
-                <input type="search">
+                <form action="search" class="search-icon-form" width="30" height="30">
+                    <label for="search" class="search-icon-form__label"></label>
+                    <input class="search-icon-form__input" id="search" type="search">
+                </form>
             </div>
         </div>
         <section class="carusel">
