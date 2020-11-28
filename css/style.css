@@ -501,6 +501,8 @@ body {
         url(../img/browser_right_10770.png);
     background-repeat: no-repeat;
     background-position: bottom center, bottom left, bottom right;
+    transition: background-position 2s ease,
+        background-image 400ms ease-in;
 }
 
 .realisation-backgrounds:hover {
